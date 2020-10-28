@@ -67,6 +67,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdvisorHomePage.html" />
+    <Content Include="AppForm.html" />
+    <Content Include="ApprovalPage.html" />
+    <Content Include="DenialPage.html" />
+    <Content Include="HomePage.html" />
+    <Content Include="images\cst_logo.png" />
+    <Content Include="StudentListPage.html" />
+    <Content Include="Styles.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
