@@ -32,26 +32,111 @@
     </header>
     <!-- nav end -->
     <!-- form start -->
-    <div class="container">
-        <form>
+    <div class="wrapper">
+        <div class="title">
+            +1 Application
+        </div>
+        <div class="form">
             <div class="form-row">
-                <div class="form-group col-md-4">
+
+                <div class="form-group col-md-6">
                     <label for="inputFirstName4">First Name</label>
                     <input type="text" class="form-control" id="inputFirstName4" placeholder="First Name">
+
                 </div>
-                <div class="form-group col-md-4">
+
+                <div class="form-group col-md-6">
                     <label for="inputLastName4">Last Name</label>
                     <input type="text" class="form-control" id="inputLastName4" placeholder="Last Name">
+
                 </div>
             </div>
-            <div class="form-group col-md-4">
-                <label for="inputEmail">TU Email</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="Example: temple342@temple.edu">
+            </br></br></br></br></br>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputStudentID4">Student ID</label>
+                    <input type="text" class="form-control" id="inputStudentID4" placeholder="9-digit ID">
+
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">TU Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Ex. Johnny123@temple.edu">
+
+                </div>
+
             </div>
-           
-           
-            <button type="submit" class="btn btn-primary">Sign in</button>
-        </form>
+            <br /><br /><br /><br />
+            <div class="inputfield">
+                <label>Expected Graduation Date</label>
+                <div class="custom_select">
+                    <select>
+                        <option value="">Year/Semester</option>
+                        <option value="2021Spring">2021/Spring</option>
+                        <option value="2021/Fall">2021/Fall</option>
+                    </select>
+                </div>
+            </div>
+            <div class="inputfield">
+                <label>Current Major</label>
+                <div class="custom_select">
+                    <select>
+                        <option value="">Select One</option>
+                        <option value="IST">IST</option>
+                        <option value="CST">CST</option>
+                    </select>
+                </div>
+            </div>
+            <div class="inputfield">
+                <label>+1 Program Application For: </label>
+                <div class="custom_select">
+                    <select>
+                        <option value="">Select A Program</option>
+                        <option value="Biotechnology">Biotechnology</option>
+                        <option value="Advanced Algorithms">Advanced Algorithms</option>
+                    </select>
+                </div>
+            </div>
+            <div class="inputfield">
+                <label>Cumulative GPA </label>
+                <input type="text" class="input" placeholder="Ex. 3.65" />
+            </div>
+            <div class="inputfield terms">
+                <label class="check">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <p>I Will Be Changing My Major In The Future</p>
+            </div>
+
+            <div class="inputfield">
+                <label>Future Major:</label>
+                <div class="custom_select">
+                    <select>
+                        <option value="">Select A Major</option>
+                        <option value="IST">IST</option>
+                        <option value="CST">CST</option>
+                    </select>
+                </div>
+            </div>
+            <div class="inputfield">
+                <label>+1 Program Application For: </label>
+                <div class="custom_select">
+                    <select>
+                        <option value="">Select A Program</option>
+                        <option value="Biotechnology">Biotechnology</option>
+                        <option value="Advanced Algorithms">Advanced Algorithms</option>
+                    </select>
+                </div>
+            </div>
+            <div class="inputfield">
+                <input type="submit" value="Submit" class="btn">
+
+                <input type="button" value="Clear Form" class="btn" id="clearBtn">
+
+            </div>
+        
+        </div>
     </div>
     <!-- form end -->
 </body>
