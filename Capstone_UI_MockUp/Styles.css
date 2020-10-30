@@ -3,6 +3,9 @@
 body {
     font-family: Roboto;
     margin: 0;
+    background: #f4f4f4;
+    padding: 0;
+    height: 100%;
 }
 
 
@@ -19,16 +22,28 @@ body {
 .rightFloater {
     float: right;
 }
+#jumbowumbo {
+    border-radius: 20px;
+    background: #fff;
+    padding: 30px;
+    text-align: center;
+    color: #444444;
+}
+#advisorEmails {
+    color: #9E1B34;
+    
+}
+#closerParagraphs {
+    border-bottom:0px;
+    margin-bottom:0px;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
-body {
-    background: #fff;
-   
-}
 
 
 .wrapper {
@@ -38,6 +53,7 @@ body {
     margin: 20px auto;
     box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
     padding: 30px;
+    border-radius: 20px;
 }
 
     .wrapper .title {
@@ -183,7 +199,7 @@ body {
                 position: center;
                 align-items:center;
                 margin-left: 150px;
-                margin-right:10px;
+                margin-right:0px;
             }
 
                 .wrapper .form .inputfield .btn:hover {
@@ -210,4 +226,23 @@ body {
         .wrapper .form .inputfield.terms {
             flex-direction: row;
         }
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 1em 0;
+    background: #222;
+}
+
+footer span {
+      color: #f8f8f8;
+      font-weight: 600;
 }
