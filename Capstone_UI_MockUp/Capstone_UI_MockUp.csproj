@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="AdvisorHomePage.html" />
     <Content Include="AppForm.html" />
+    <Content Include="ApplicationStyles.css" />
     <Content Include="ApprovalPage.html" />
     <Content Include="DenialPage.html" />
     <Content Include="HomePage.html" />
