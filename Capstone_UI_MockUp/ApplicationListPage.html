@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -40,13 +40,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link" href="AdvisorHomePage.html">Home</a>
+                <a class="nav-link active" href="AdvisorHomePage.html">Home <span class="sr-only">(current)</span></a>
                 <a class="nav-link" href="ApplicationListPage.html">Application List</a>
-                <a class="nav-link  active" href="StudentListPage.html">Student List <span class="sr-only">(current)</span></a>
-                <a class="nav-link" href="#">Settings</a>
+                <a class="nav-link" href="StudentListPage.html">Student List</a>
+                <a class="nav-link" href="Settings.html">Settings</a>
             </div>
         </div>
     </nav>
+
 
     <div class="container-fluid">
         <div class="row content">
@@ -55,66 +56,111 @@
             </div>
 
             <div class="col-sm-6">
-                <div class="viewStudents">
+                <button class="appBtn" onclick="toggleElements('Tables', 'Tables1')">Pending Applications (<span style="color:blue">3</span>)</button>
+                <button class="appBtn" onclick="toggleElements('Tables1', 'Tables')">Completed Applications (<span style="color:blue">5</span>)</button>
 
-                    <a href="#">View All Student</a>
+                <div id="Tables" style="display:none">
+                    <table>
+                        <tr>
+                            <th>Student Name​</th>
+                            <th>TUID​</th>
+                            <th>Creation Date​</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+
+                        <tr>
+                            <td>John Wick</td>
+                            <td>915123456</td>
+                            <td>6/8/2020</td>
+                            <td>Waiting for FA to process</td>
+                            <td colspan="2">
+                                <a href="#">View</a>
+                                <a href="#">Process</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Peter Parker</td>
+                            <td>915789123</td>
+                            <td>7/10/2020</td>
+                            <td>Waiting for FA to process</td>
+                            <td colspan="2">
+                                <a href="#">View</a>
+                                <a href="#">Process</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Troy Lee</td>
+                            <td>915234567</td>
+                            <td>7/16/2020</td>
+                            <td>Waiting for FA to process</td>
+                            <td colspan="2">
+                                <a href="#">View</a>
+                                <a href="#">Process</a>
+                            </td>
+                        </tr>
+
+                    </table>
                 </div>
-                <div class="title">
-                    Enter Your Search Criteria:
+
+                <div id="Tables1" style="display: none">
+                    <table>
+                        <tr>
+                            <th>Student Name​</th>
+                            <th>TUID​</th>
+                            <th>Completed Date​</th>
+                            <th>Actions</th>
+                        </tr>
+
+                        <tr>
+                            <td>John Wick</td>
+                            <td>915123456</td>
+                            <td>6/8/2020</td>
+                            <td>
+                                <a href="#">View</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Peter Parker</td>
+                            <td>915789123</td>
+                            <td>7/10/2020</td>
+                            <td>
+                                <a href="#">View</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Troy Lee</td>
+                            <td>915234567</td>
+                            <td>7/16/2020</td>
+                            <td>
+                                <a href="#">View</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>John Wick</td>
+                            <td>915123456</td>
+                            <td>6/8/2020</td>
+                            <td>
+                                <a href="#">View</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>John Wick</td>
+                            <td>915123456</td>
+                            <td>6/8/2020</td>
+                            <td>
+                                <a href="#">View</a>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
 
-                <div class="form">
-                    <div class="form-group">
-                        <label for="inputFirstName">First Name: </label>
-                        <input type="text" class="form-control" id="inputFirstName" placeholder="First Name">
-
-                        <label for="inputLastName">Last Name: </label>
-                        <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
-
-                        <label for="inputTUID">TUID: </label>
-                        <input type="text" class="form-control" id="inputTUID" placeholder="9 Digit">
-
-                        <div class="inputfield form-group">
-
-                            <label>Semester: </label>
-                            <div class="custom_select">
-                                <select>
-                                    <option value="">Year/Semester</option>
-                                    <option value="2020Spring">2020/Spring</option>
-                                    <option value="2020/Fall">2020/Fall</option>
-                                </select>
-                            </div>
-
-                        </div>
-
-                        <div class="inputfield form-group">
-                            <label>Major: </label>
-                            <div class="custom_select">
-                                <select>
-                                    <option value="">Select One</option>
-                                    <option value="IST">IST</option>
-                                    <option value="CST">CST</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="inputfield form-group">
-                            <label>+1 Program: </label>
-                            <div class="custom_select">
-                                <select>
-                                    <option value="">Select A Program</option>
-                                    <option value="Biotechnology">Biotechnology</option>
-                                    <option value="Advanced Algorithms">Advanced Algorithms</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="searchBtn">
-                            <button type="button" class=" btn btn-lg">Search</button>
-                            <a href="#">Clear</a>
-                        </div>
-
-                    </div>
-                </div>
             </div>
 
             <div class="col-sm-3 sidenav">
@@ -127,5 +173,13 @@
         <p>Plus One Group</p>
     </footer>
 </body>
+
+<script>
+function toggleElements(showElement, hideElement) {
+  document.getElementById(showElement).style.display = "block";
+  document.getElementById(hideElement).style.display = "none";
+}
+
+</script>
 
 </html>
