@@ -292,3 +292,60 @@ footer span {
       color: #f8f8f8;
       font-weight: 600;
 }
+
+#logInBody 
+{
+    height: 100vh;
+    margin-top: -7%;
+    background-image: url('images/liberalarts_owl_hero2020-min.png');
+    background-size: cover;
+}
+
+#login 
+{
+    padding-top: .25%;
+    background-color: rgba(255,255,255, 0.96);
+    height: 640px;
+    width: 42%;
+    text-align: center;
+    font-family: 'Century Gothic', Garamond, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: auto;
+    margin-top: 7%;
+    border-radius: 5%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#personImg
+{
+    height: 150px;
+    width: 175px;
+}
+
+label
+{
+    font-size: 32px;
+}
+
+#txtUsername 
+{
+    height: 36px;
+    width: 240px;
+}
+
+#txtPassword 
+{
+    height: 36px;
+    width: 240px;
+}
+
+a
+{
+    color: white;
+}
+
+a :hover
+{
+    color: white;
+}
