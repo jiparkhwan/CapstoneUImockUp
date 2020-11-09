@@ -130,7 +130,7 @@ nav a{
 .title {
         font-size: 24px;
         font-weight: 700;
-        margin: 25px 0 25px 0;
+        margin: 20px 0 25px 0;
         color: #B30838;
         text-align: left;
 		padding: 0;
@@ -245,17 +245,38 @@ ul li:hover {
 
 .appView1{
 
-	margin-left: 400px;
-	margin-right:auto;   
-	text-align: left;
+  
 	font-weight: 600;
+	
+}
+
+.appView2{
+    margin-left: auto;
+	margin-right:auto;
+  
+	text-align: center;
+	font-weight: 600;
+	
 }
 
 .appView label{
 	display: inline;
 }
 
+.nextAPP{
+	display: inline;
+	magin-top:25px;
+}
 
+.isDisabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.isDisabled > a {
+  color: currentColor;
+  pointer-events: none;
+  text-decoration: none;
+}
 
 .form input{
 	width:400px;
@@ -402,7 +423,7 @@ footer p{
 
 label
 {
-    font-size: 32px;
+    font-size: 18px;
 }
 
 #txtUsername 
@@ -417,12 +438,3 @@ label
     width: 240px;
 }
 
-a
-{
-    color: white;
-}
-
-a :hover
-{
-    color: white;
-}
