@@ -119,6 +119,7 @@
     <Content Include="StudentListPage.html" />
     <Content Include="Styles.css" />
     <Content Include="ViewApplicationPage.html" />
+    <Content Include="ViewCompletedApplicationPage2.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

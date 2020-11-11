@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -58,46 +58,59 @@
         <hr>
 
         <div class="appView2">
+            <p>Change your role in the application. <br /><strong>Warning:</strong> If you change from administrator to advisor, you will not be able to switch it back.
+            A different administraitor must change it back.</p>
             Current Role:
             <select name="advisorRole" id="role">
                 <option value="Admin">Administrator</option>
                 <option value="Advisor">Advisor</option>
             </select>
-            <br /> <br />
+            <br />
+            <br />
+            <button type="button" id="btnSubmitSettings" class="btn btn-success btn-md">Submit</button>
+            <br />
+            <hr />
+            <p>Assign a different employee within your department an administator role. Select the roll and then the person from the dropdown lists
+            below and press submit.</p>
             Assign Employee Roles:
             <br />
             <select name="assignAdvisorRolePerson" id="role">
+                <option value="None Selected">None Selected...</option>
                 <option value="Admin">Administrator</option>
                 <option value="Advisor">Advisor</option>
             </select>
             <select name="assignAdvisorRole" id="role">
-                <option value="Admin">Administrator</option>
-                <option value="Advisor">Advisor</option>
+                <option value="None Selected">None Selected...</option>
+                <option value="Erin Spiotta">Erin Spiotta</option>
+                <option value="Stephanie Ballard">Stephanie Ballard</option>
             </select>
             <br />
             <br />
-            <button type="button" id="btnSubmitSettings" class="btn btn-success btn-lg">Submit</button>
-            <br /> <br />
+            <button type="button" id="btnSubmitSettings" class="btn btn-success btn-md">Submit</button>
+            <br />
+            <hr />
+            <p>Change the department you work for below. This will change which student applications you will recieve when applications are filled out.</p>
+            <br />
             Change Department:
-                   <select name="assignAdvisorRolePerson" id="role">
-                       <option value="Select Dept">Select Department...</option>
-                       <option value="Biology">Biology</option>
-                       <option value="Chemistry">Chemistry</option>
-                       <option value="CIS">CIS</option>
-                       <option value="Earth & Environmental Science">Earth & Environmental Science</option>
-                       <option value="Mathematics">Mathematics</option>
-                       <option value="Physics">Physics</option>
-                   </select>
-            <br /> <br />
+            <select name="assignAdvisorRolePerson" id="role">
+                <option value="Select Dept">Select Department...</option>
+                <option value="Biology">Biology</option>
+                <option value="Chemistry">Chemistry</option>
+                <option value="CIS">CIS</option>
+                <option value="Earth & Environmental Science">Earth & Environmental Science</option>
+                <option value="Mathematics">Mathematics</option>
+                <option value="Physics">Physics</option>
+            </select>
+            <br />
+            <br />
+            <button type="button" id="btnSubmitSettings" class="btn btn-success btn-md">Submit</button>
+            <br />
+            <br />
             <a href="Help.html" style="margin:0px;"><smaller>Help</smaller></a>
-            <br /> <br />
-
-        </div>
-        <hr>
-        <div class="processBtn">
-            <button type="button" class=" btn btn-lg">Submit Changes</button>
-
-            <a href="AdvisorHomePage.html">Back To Advisor Home</a>
+            <a href="AdvisorHomePage.html" class="homeLink">Back To Advisor Home</a>
+            <br />
+            <br />
+            <br />
         </div>
     </div>
     <!-- footer -->
