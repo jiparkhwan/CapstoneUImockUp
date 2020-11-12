@@ -126,13 +126,19 @@ nav a{
         text-transform: uppercase;
         
     }
-	
+
+
+.helpPage {
+    max-width: 1000px;
+    text-align: center;
+    display: inline-block;
+}
+
 .title {
         font-size: 24px;
         font-weight: 700;
         margin: 20px 0 25px 0;
         color: #B30838;
-        text-align: left;
 		padding: 0;
 }
 
@@ -160,21 +166,21 @@ ul {
 }
 
 
+
 ul li {
-  cursor: pointer;
-  position: relative;
-  padding: 12px 8px 12px 40px;
-  margin-left: 0;
-  list-style-type: none;
-  background: #ffffff;
-  font-size: 20px;
-  transition: 0.2s;
-  
-  /* make the list items unselectable */
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    margin-left: 0;
+    list-style-type: none;
+    background: #ffffff;
+    font-size: 20px;
+    transition: 0.2s;
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 
@@ -205,20 +211,20 @@ ul li:hover {
 	
 }
 
-.processBtn{
-
-	margin-top: 20px;
-	margin-left: 350px;
+.processBtn {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.processBtn button{
-	background-color: #B30838;
-	color:#FFFFFF;
-	margin-right:70px;
-	font-size: 20px;
-	width:250px;
-	
-}
+    .processBtn button {
+        background-color: #B30838;
+        color: #FFFFFF;
+        margin-right: 70px;
+        font-size: 20px;
+        width: 250px;
+    }
 
 .appBtn{
 	margin-top: 50px;
@@ -236,11 +242,10 @@ ul li:hover {
 	color:#FFFFFF;
 }
 
-.appView{
-	margin: auto;
-	  width: 50%;
-	  padding: 10px;
-
+.appView {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
 }
 
 .appView1{
@@ -250,13 +255,16 @@ ul li:hover {
 	
 }
 
-.appView2{
+#btnSubmitSettings {
+    background-color: #B30838;
+    outline-color: #B30838;
+    border-color: #B30838;
+}
+
+.appView2 {
     margin-left: auto;
-	margin-right:auto;
-  
-	text-align: center;
-	font-weight: 600;
-	
+    margin-right: auto;
+    font-weight: 600;
 }
 
 .appView label{
@@ -367,17 +375,25 @@ table th {
   color: white;
 }
 
+body {
+    position: relative; /* for the footer to move with the page size */
+    min-height: 100%; /* for the footer to be at the bottom */
+}
 
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
 
 footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height:40px;
-  background-color:#bfbfbf;
-  color: white;
-  text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #bfbfbf;
+    color: white;
+    text-align: center;
 }
 
 footer p{
@@ -438,3 +454,6 @@ label
     width: 240px;
 }
 
+.homeLink {
+    float: right;
+}
