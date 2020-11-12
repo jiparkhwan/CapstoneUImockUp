@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -44,6 +44,7 @@
                 <a class="nav-link" href="ApplicationListPage.html">Application List</a>
                 <a class="nav-link  active" href="StudentListPage.html">Student List <span class="sr-only">(current)</span></a>
                 <a class="nav-link" href="Settings.html">Settings</a>
+
             </div>
         </div>
     </nav>
@@ -51,17 +52,15 @@
     <div class="container-fluid">
         <div class="row content">
 
-            <div class="col-sm-3 sidenav ">
+            <div class="col-sm-2 sidenav ">
             </div>
 
-            <div class="col-sm-6">
-                <div class="viewStudents">
+            <div class="col-sm-3">
 
-                    <a href="ViewAllStudents.html">View All Student</a>
-                </div>
                 <div class="title">
                     Enter Your Search Criteria:
                 </div>
+
 
                 <div class="form">
                     <div class="form-group">
@@ -108,19 +107,99 @@
                                 </select>
                             </div>
                         </div>
+						<div class="viewStudents" >
+						
+						    <a href="#" onclick="toggleElements('Tables')">View All Students</a>
+						</div>
                         <div class="searchBtn">
                             <button type="button" class=" btn btn-lg">Search</button>
                             <a href="#">Clear</a>
                         </div>
-                        <br />
-                        <br />
-                        <br />
+
+
                     </div>
                 </div>
             </div>
 
-            <div class="col-sm-3 sidenav">
+            <div class="col-sm-5">
+
+				
+				<div id="Tables" style="display: none;" >
+					<div class="title">
+					    Search Result:
+					</div>
+				  <table>
+				    <tr>
+				      <th>Student Name​</th>
+				      <th>TUID​</th>
+				      <th>Major</th>
+					  <th>Credit Hours Earned</th>
+					  <th></th>
+				    </tr>
+					
+					<tr>
+					  <td>Jeremy Clarkson</td>
+					  <td>915000000</td>
+					  <td>Natural Science</td>
+					  <td>80</td>
+					  <td>
+						  <a href="StudentProfile1.html">View Full Profile</a>
+					  
+					  </td>
+					</tr>
+					
+					<tr>
+					  <td>John Smith</td>
+					  <td>915234567</td>
+					  <td>Biology</td>
+					  <td>110</td>
+					  <td>
+						  <a href="#">View Full Profile</a>
+					  
+					  </td>
+					</tr>
+					
+				    <tr>
+				      <td>John Wick</td>
+				      <td>915123456</td>
+				      <td>Biology</td>
+					  <td>105</td>
+					  <td>
+						  <a href="#">View Full Profile</a>				  
+					  </td>
+				    </tr>
+					
+					<tr>
+					  <td>Peter Parker</td>
+					  <td>915789123</td>
+					  <td>Forensic Chemistry</td>
+					  <td>123</td>
+					  <td>
+						  <a href="#">View Full Profile</a>					  
+					  </td>
+					</tr>
+					
+				
+					
+					<tr>
+					  <td>Troy Lee</td>
+					  <td>913435674</td>
+					  <td>Mathematics</td>
+					  <td>90</td>
+					  <td>
+						  <a href="#">View Full Profile</a>
+					  
+					  </td>
+					</tr>
+					
+					
+					
+				  </table>
+				</div>
             </div>
+			
+			<div class="col-sm-2 sidenav ">
+			</div>
         </div>
     </div>
 
@@ -129,5 +208,11 @@
         <p>Plus One Group</p>
     </footer>
 </body>
+
+<script>
+function toggleElements(showElement) {
+  document.getElementById(showElement).style.display = "block";
+}
+</script>
 
 </html>

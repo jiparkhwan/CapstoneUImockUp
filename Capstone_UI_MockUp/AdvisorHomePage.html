@@ -54,11 +54,81 @@
         </div>
         <div id="notification">
             <ul id="myUL">
-                <li>You have (<span style="color:blue">3</span>) remaining applications to process.​</li>
+                <li>You have (<span style="color:blue">3</span>) remaining applications to process​</li>
+				<li>You received (<span style="color:blue">1</span>) new application</li>
             </ul>
         </div>
-        <button type="button" class="viewAllBtn btn btn-lg">VIEW ALL NOTIFICATIONS</button>
+        <button type="button" class="viewAllBtn btn btn-lg" onclick="toggleElements('Tables')">View All Notifications</button>
+		
+		
     </div>
+	<div class="container-fluid">
+	    <div class="row content">
+	
+	        <div class="col-sm-4 sidenav ">
+	        </div>
+	
+	        <div class="col-sm-4">
+
+				
+				
+				<div id="Tables" style="display:none">
+					<div class="title">
+					    All Notifications:
+					</div>
+					  <table>
+
+						
+					    <tr>
+					      <td>11/12/2020</td>
+					      
+						  <td>You have (<span style="color:blue">3</span>) remaining applications to process.</td>
+						  <td>
+							  <a href="ViewApplicationPage.html">View</a>
+							  <a href="#">Dismiss</a>
+						  </td>
+					    </tr>
+						
+						<tr>
+						  <td>11/11/2020</td>
+
+						  <td>You received (<span style="color:blue">1</span>) new application</td>
+						  <td>
+							  <a href="ViewApplication2.html">View</a>
+							  <a href="#">Dismiss</a>
+						  </td>
+						</tr>
+						
+						<tr>
+						  <td>11/10/2020</td>
+
+						  <td>(<span style="color:blue">2</span>) students enrolled in the +1 program today</td>
+						  <td>
+							  <a href="#">View</a>
+							  <a href="#">Dismiss</a>
+						  
+						  </td>
+						</tr>
+						
+					  </table>
+					</div>
+	
+
+				
+	
+	
+	            
+	        </div>
+	
+	        <div class="col-sm-4 sidenav">
+	        </div>
+	    </div>
+	</div>
+	
+		
+		
+	
+	</div>
 
 
     <footer>
@@ -86,6 +156,12 @@
 	    div.style.display = "none";
 	  }
 	}
+</script>
+<script>
+function toggleElements(showElement, hideElement) {
+  document.getElementById(showElement).style.display = "block";
+  document.getElementById(hideElement).style.display = "none";
+}
 </script>
 
 </html>

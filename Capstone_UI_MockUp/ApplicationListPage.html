@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -63,7 +63,7 @@
                 <a class="nav-link" href="AdvisorHomePage.html">Home</a>
                 <a class="nav-link active" href="ApplicationListPage.html">Application List <span class="sr-only">(current)</span></a>
                 <a class="nav-link" href="StudentListPage.html">Student List</a>
-                <a class="nav-link" href="Settings.html">Settings</a>
+                <a class="nav-link" href="#">Settings</a>
             </div>
         </div>
     </nav>
@@ -75,112 +75,110 @@
             </div>
 			
             <div class="col-sm-6">
-                <center>
-                <button class="appBtn" onclick="toggleElements('Tables', 'Tables1')">Pending Applications (<span style="color:blue">3</span>)</button>
-                <button class="appBtn" onclick="toggleElements('Tables1', 'Tables')">Completed Applications (<span style="color:blue">6</span>)</button>
-                </center>
+				<button class="appBtn" onclick="toggleElements('Tables', 'Tables1')">Pending Applications (<span style="color:blue">3</span>)</button> 
+				<button class="appBtn" onclick="toggleElements('Tables1', 'Tables')">Completed Applications (<span style="color:blue">6</span>)</button>
+				
+				<div id="Tables" style="display:none">
+				  <table>
+				    <tr>
+				      <th>Student Name​</th>
+				      <th>TUID​</th>
+				      <th>Creation Date​</th>
+					  <th>Status</th>
+					  <th></th>
+				    </tr>
+					
+				    <tr>
+				      <td>John Wick</td>
+				      <td>915123456</td>
+				      <td>6/8/2020</td>
+					  <td>Waiting for FA to process</td>
+					  <td>
+						  <a href="ViewApplicationPage.html">View</a>				  
+					  </td>
+				    </tr>
+					
+					<tr>
+					  <td>Peter Parker</td>
+					  <td>915789123</td>
+					  <td>7/10/2020</td>
+					  <td>Waiting for FA to process</td>
+					  <td>
+						  <a href="ViewApplication2.html">View</a>					  
+					  </td>
+					</tr>
+					
+					<tr>
+					  <td>Troy Lee</td>
+					  <td>915234567</td>
+					  <td>7/16/2020</td>
+					  <td>Waiting for FA to process</td>
+					  <td>
+						  <a href="#">View</a>
+					  
+					  </td>
+					</tr>
+					
+				  </table>
+				</div>
+				
+				<div id="Tables1" style="display: none">
+				  <table>
+				    <tr>
+				      <th>Student Name​</th>
+				      <th>TUID​</th>
+				      <th>Completed Date​</th>					  
+					  <th></th>
+				    </tr>
+					
+				    <tr>
+				      <td>John Wick</td>
+				      <td>915123456</td>
+				      <td>6/8/2020</td>
+					  <td>
+						  <a href="ViewCompletedApplicationPage.html">View</a>					  
+					  </td>
+				    </tr>
+					
+					<tr>
+					  <td>Peter Parker</td>
+					  <td>915789123</td>
+					  <td>7/10/2020</td>
+					  <td>
+						  <a href="#">View</a>					  
+					  </td>
+					</tr>
+					
+					<tr>
+					  <td>Troy Lee</td>
+					  <td>915234567</td>
+					  <td>7/16/2020</td>
+					  <td>
+						  <a href="#">View</a>					  
+					  </td>
+					</tr>
+					
+					<tr>
+					  <td>John Wick</td>
+					  <td>915123456</td>
+					  <td>6/8/2020</td>
+					  <td>
+						  <a href="#">View</a>					  
+					  </td>
+					</tr>
+					
+					<tr>
+					  <td>John Wick</td>
+					  <td>915123456</td>
+					  <td>6/8/2020</td>
+					  <td>
+						  <a href="#">View</a>					  
+					  </td>
+					</tr>
+				  </table>
+				</div>
 
-                <div id="Tables" style="display:none">
-                    <table>
-                        <tr>
-                            <th>Student Name​</th>
-                            <th>TUID​</th>
-                            <th>Creation Date​</th>
-                            <th>Status</th>
-                            <th>Actions</th>
-                        </tr>
-
-                        <tr>
-                            <td>John Wick</td>
-                            <td>915123456</td>
-                            <td>6/8/2020</td>
-                            <td>Waiting for FA to process</td>
-                            <td>
-                                <a href="ViewApplicationPage.html">View</a>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>Peter Parker</td>
-                            <td>915789123</td>
-                            <td>7/10/2020</td>
-                            <td>Waiting for FA to process</td>
-                            <td>
-                                <a href="ViewApplication2.html">View</a>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>Troy Lee</td>
-                            <td>915234567</td>
-                            <td>7/16/2020</td>
-                            <td>Waiting for FA to process</td>
-                            <td>
-                                <a href="#">View</a>
-
-                            </td>
-                        </tr>
-
-                    </table>
-                </div>
-
-                <div id="Tables1" style="display: none">
-                    <table>
-                        <tr>
-                            <th>Student Name​</th>
-                            <th>TUID​</th>
-                            <th>Completed Date​</th>
-                            <th>Actions</th>
-                        </tr>
-
-                        <tr>
-                            <td>John Wick</td>
-                            <td>915123456</td>
-                            <td>6/8/2020</td>
-                            <td>
-                                <a href="ViewCompletedApplicationPage.html">View</a>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>Peter Parker</td>
-                            <td>915789123</td>
-                            <td>7/10/2020</td>
-                            <td>
-                                <a href="ViewCompletedApplicationPage2.html">View</a>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>Troy Lee</td>
-                            <td>915234567</td>
-                            <td>7/16/2020</td>
-                            <td>
-                                <a href="#">View</a>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>John Wick</td>
-                            <td>915123456</td>
-                            <td>6/8/2020</td>
-                            <td>
-                                <a href="#">View</a>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>John Wick</td>
-                            <td>915123456</td>
-                            <td>6/8/2020</td>
-                            <td>
-                                <a href="#">View</a>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-
-            </div>
+			</div>
 			
 			<div class="col-sm-3 sidenav">
 		    </div>
