@@ -115,10 +115,15 @@
     <Content Include="DenialPage.html" />
     <Content Include="HomePage.html" />
     <Content Include="images\cst_logo.png" />
+    <Content Include="ManageAccount.html" />
     <Content Include="Settings.html" />
     <Content Include="StudentListPage.html" />
+    <Content Include="StudentProfile1.html" />
     <Content Include="Styles.css" />
+    <Content Include="ViewAllStudents.html" />
+    <Content Include="ViewApplication2.html" />
     <Content Include="ViewApplicationPage.html" />
+    <Content Include="ViewCompletedApplicationPage.html" />
     <Content Include="ViewCompletedApplicationPage2.html" />
     <Content Include="Web.config" />
   </ItemGroup>
