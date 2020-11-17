@@ -113,10 +113,12 @@
     <Content Include="bin\roslyn\vbc.exe" />
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
     <Content Include="DenialPage.html" />
+    <Content Include="Help.html" />
     <Content Include="HomePage.html" />
     <Content Include="images\cst_logo.png" />
     <Content Include="images\liberalarts_owl_hero2020-min.png" />
     <Content Include="images\PersonImg.png" />
+    <Content Include="Log-In.html" />
     <Content Include="ManageAccount.html" />
     <Content Include="Settings.html" />
     <Content Include="StudentListPage.html" />

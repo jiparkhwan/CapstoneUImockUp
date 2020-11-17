@@ -276,16 +276,16 @@ nav {
 /* footer */
 
 footer {
+    position: fixed;
     width: 100%;
     margin: 0 auto;
-   margin:auto;
+    margin: auto;
     bottom: 0;
     left: 0;
     right: 0;
-   
     text-align: center;
     padding: 1em 0;
-    background: #222;
+    background: #bfbfbf;
 }
 
 footer span {
